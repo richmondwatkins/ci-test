@@ -1,7 +1,6 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 @import url(http://fonts.googleapis.com/css?family=Quattrocento);
-
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -213,6 +212,7 @@ textarea {
 }
 
 #display-content-container > h1{
+    font-style: bold;
     text-transform: uppercase;
     color: white;
 }
@@ -377,9 +377,10 @@ textarea {
 
 .member {
     width: 200px;
-       text-align: center;
+    text-align: center;
     display: inline-block;
     margin-bottom: 40px;
+    position: relative;
 }
 
 .member > h4 {
@@ -392,6 +393,7 @@ textarea {
 .member > p {
     margin: 0px;
     color: rgb(134, 145, 119);
+    font-family: 'Quattrocento', serif;
 }
 
 .member > img{
@@ -401,6 +403,29 @@ textarea {
  }
 
 
+.member:hover .overlay{
+    opacity:0.7;
+}
+
+.overlay {
+    position: absolute;
+    left: 0; 
+    top: 0; 
+    right: 0;
+    height: 180px;
+    width: 180px;
+    margin: auto;
+    background-color:#3f3f3f;
+    border-radius: 50%;
+    opacity:0;
+}
+
+.image-overlay-icon {
+    width: 50px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
 
 /*=================== FOOTER =============================*/
 
@@ -432,15 +457,16 @@ textarea {
     display: inline-block;
 }
 .logo-contact-container > ul > li:nth-child(-n+3){
-    border-right: 2px solid white;
+    border-right: 2px solid rgb(210, 208, 206);
 }
 
 .logo-contact-container > ul > li > a{
-    color: white;
+    color: color: rgb(210, 208, 206);;
     text-decoration: none;
     padding-right: 8px;
     padding-left: 8px;
     font-size: 12px;
+    color: rgb(210, 208, 206);
 }
 
 .logo-contact-container > #footer-social{
@@ -464,8 +490,6 @@ textarea {
     padding-left: 20px;
 }
 
-
-/*=================== THEME ================*/
 
 
 

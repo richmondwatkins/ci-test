@@ -3,6 +3,7 @@
 	$(document).ready(function(){
     checkScrollPosition();
 		$(window).scroll(checkScrollPosition); 
+    $('.member > img').hover(addOverlay);
 	});
 
   function checkScrollPosition(){
@@ -16,6 +17,10 @@
         $('#scroll-search').hide();
       }
     }
+
+  function addOverlay(){
+    // $(this).addClass('hover');
+  }
 
 })();
 
