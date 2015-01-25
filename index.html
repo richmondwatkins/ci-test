@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -22,19 +24,19 @@
         <![endif]-->
 
         <nav class="main-menu">
-            <div class="left-menu-items">
-                 <a href="#" class="left-menu-item">HOME</a>
-                <p id="left-menu-item-divider" class="left-menu-item">/</p>
-                <a href="#" class="left-menu-item">CONTACT US</a>
+            <div class="menu-item-containers left-menu-items">
+                 <a href="#" class="menu-item-text-attrs">Home</a>
+                <p id="left-menu-item-divider" class="left-menu-item menu-item-text-attrs">/</p>
+                <a href="#" class="menu-item-text-attrs">Contact Us</a>
             </div>
             
-             <div class="right-menu-items">
-                <a href="#" class="right-menu-item">LOGIN</a>
-                <p id="right-menu-item-divider" >/</p>
-                <a href="#" class="right-menu-item">REGISTER</a>
-                <a href="#" class="right-menu-item"><img class="right-menu-image-link" src="img/login.png"></a>
-                <a href="#" class="right-menu-item"><img class="right-menu-image-link" src="img/cart.png"></a>
-                <input class="right-menu-item" type="search" value="Search">
+             <div class="menu-item-containers right-menu-items">
+                <a href="#" class="menu-item-text-attrs">LOGIN</a>
+                <p id="right-menu-item-divider" class="menu-item-text-attrs" >/</p>
+                <a href="#" class="menu-item-text-attrs">REGISTER</a>
+                <a href="#" class="menu-item-text-attrs"><img class="right-menu-image-link" src="img/login.png"></a>
+                <a href="#" class="menu-item-text-attrs"><img class="right-menu-image-link" src="img/cart.png"></a>
+                <input class="search-input" id="menu-search-input" type="search" value="Search">
             </div>
         </nav>
 
@@ -80,14 +82,23 @@
                 </li>
             </ul>
 
-            <div class="subscribe">
+            <div id="subscribe">
                 <img src="img/subscription.png">
                 <p>SUBSCRIBE TO RECEIVE UPDATES</p>
+            </div>
+            
+            <div id="scroll-search">
+                <input class="search-input" id="scroll-serach-input" type="search" value="Search">
+                <div>
+                      <a href="#" class="menu-item-text-attrs"><img class="right-menu-image-link" src="img/login.png"></a>
+                    <a href="#" class="menu-item-text-attrs"><img class="right-menu-image-link" src="img/cart.png"></a>
+
+                </div>
             </div>
         </div>
 
         <div id="display-content-container">
-            <h1>ABOUT</h1>
+            <h1>About Us</h1>
             <p>Vero eos et accusamus et isusto odio dignissimos ducimus qui blanditis praesentium</p>
         </div>
 
@@ -200,12 +211,13 @@
             <img id="footer-social" src="img/footer-social.png">
 
             <div id="copyright-poweredby">
-                <p>© Duckhole Inc. All Rights Reserved.</p>
+                <p>©2014 Duckhole Inc. All rights reserved.</p>
                 <img id="caddis-logo" src="img/caddis.png">
             </div>
 
         </div>
     </div>
 
+    <script src="js/main.js"></script>
     </body>
 </html>
