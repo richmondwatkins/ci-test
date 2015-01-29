@@ -10,11 +10,11 @@
 
       if($(window).scrollTop() >= 418){
 
-        $('#subscribe').hide();
-        $('#scroll-search').show();
+        $('.subscribe').hide();
+        $('.scroll-search').show();
       }else {
-        $('#subscribe').show();
-        $('#scroll-search').hide();
+        $('.subscribe').show();
+        $('.scroll-search').hide();
       }
     }
 

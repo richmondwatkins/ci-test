@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<html> 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,224 +8,240 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/vendor/jquery-1.10.2.min.js"></script>
 
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
-        <nav class="main-menu">
-            <div class="menu-item-containers left-menu-items">
-                 <a href="#" class="menu-item-text-attrs">Home</a>
-                <p id="left-menu-item-divider" class="left-menu-item menu-item-text-attrs">/</p>
-                <a href="#" class="menu-item-text-attrs">Contact Us</a>
-            </div>
-            
-             <div class="menu-item-containers right-menu-items">
-                <a href="#" class="menu-item-text-attrs">LOGIN</a>
-                <p id="right-menu-item-divider" class="menu-item-text-attrs" >/</p>
-                <a href="#" class="menu-item-text-attrs">REGISTER</a>
-                <a href="#" class="menu-item-text-attrs"><img class="right-menu-image-link" src="img/login.png"></a>
-                <a href="#" class="menu-item-text-attrs"><img class="right-menu-image-link" src="img/cart.png"></a>
-                <input class="search-input" id="menu-search-input" type="search" value="Search">
-            </div>
-        </nav>
+        <div class="header-menu">
+            <ul class="menu-item-containers left-menu-items">
+                <li class="menu-item-li">
+                    <a href="#" class="menu-item-text-attrs">Home</a>
+                </li>
 
-        <div class="side-menu">
-            <img src="img/menu-logo.jpg" class="menu-logo" alt="logo">
+                <li class="menu-item-li">
+                    <span class="left-menu-item menu-item-text-attrs left-menu-item-divider">/</span>
+                </li>
+
+                <li class="menu-item-li">
+                    <a href="#" class="menu-item-text-attrs">Contact Us</a>
+                </li>
+            </ul>
+    
+            <ul class="menu-item-containers right-menu-items">
+                <li class="menu-item-li">
+                    <a href="#" class="menu-item-text-attrs">Login</a>
+                </li>
+
+                <li class="menu-item-li">
+                    <span class="menu-item-text-attrs right-menu-item-divider" >/</span>
+                </li>
+
+                <li class="menu-item-li">
+                    <a href="#" class="menu-item-text-attrs">Register</a>
+                </li>
+
+                <li class="menu-item-li">
+                    <a href="#" class="menu-item-text-attrs"><img class="right-menu-image-link" src="img/login.png"></a>
+                </li>
+
+                <li class="menu-item-li">
+                    <a href="#" class="menu-item-text-attrs"><img class="right-menu-image-link" src="img/cart.png"></a>
+                </li>
+
+                <li class="menu-item-li">
+                    <form>
+                        <input class="search-input menu-search-input" type="search" role="search" placeholder="Search">
+                    </form>
+                </li>
+
+            </ul>
+        </div>
+
+        <nav class="side-menu" role="navigation">
+            <a href="#"><img src="img/menu-logo.png" class="menu-logo" alt="logo"></a>
             <ul class="menu-items">
-                <li>
-                    <img src="img/side-menu-arrow.png" class="side-menu-arrow">
-                    <p>HUNTING GEAR</p>
+                <li class="side-menu-li">
+                    <span class="side-menu-item">Hunting Gear</span>
                 </li>
-                <li>
-                    <img src="img/side-menu-arrow.png" class="side-menu-arrow">
-                    <p>FISHING GEAR</p>
+                <li class="side-menu-li">
+                    <span class="side-menu-item">Fising Gear</span>
                 </li>
 
-                <li>
-                    <img src="img/side-menu-arrow.png" class="side-menu-arrow">
-                    <p>SHOOTING</p>
+                <li class="side-menu-li">
+                    <span class="side-menu-item">Shooting</span>
                 </li>
-                <li>
-                    <img src="img/side-menu-arrow.png" class="side-menu-arrow">
-                    <p>CLOTHES GEAR</p>
+                <li class="side-menu-li">
+                    <span class="side-menu-item">Clothes Gear</span>
                 </li>
-                <li>
-                    <img src="img/side-menu-arrow.png" class="side-menu-arrow">
-                    <p>SHOES & BOOTS</p>
+                <li class="side-menu-li">
+                    <span class="side-menu-item">Shoes &amp Boots</span>
                 </li>
-                <li>
-                    <img src="img/side-menu-arrow.png" class="side-menu-arrow">
-                    <p>KIDS</p>
+                <li class="side-menu-li">
+                    <span class="side-menu-item">Kids</span>
                 </li>
-                <li>
-                    <img src="img/side-menu-arrow.png" class="side-menu-arrow">
-                    <p>TECHNOLOGY</p>
+                <li class="side-menu-li">
+                    <span class="side-menu-item">Technology</span>
                 </li>
-                <li>
-                    <img src="img/side-menu-arrow.png" class="side-menu-arrow">
-                    <p>SALE</p>
+                <li class="side-menu-li">
+                    <span class="side-menu-item">Sale</span>
                 </li>
-                <li>
-                    <img src="img/side-menu-arrow.png" class="side-menu-arrow">
-                    <p>BLOG</p>
+                <li class="side-menu-li">
+                    <span class="side-menu-item">Blog</span>
                 </li>
             </ul>
 
-            <div id="subscribe">
-                <img src="img/subscription.png">
-                <p>SUBSCRIBE TO RECEIVE UPDATES</p>
+            <div class="subscribe">
+                <img src="img/subscription.png" class="subscribe-image">
+                <span class="updates-copy">Subscribe to receive updates</span>
             </div>
             
-            <div id="scroll-search">
-                <input class="search-input" id="scroll-serach-input" type="search" value="Search">
+            <div class="scroll-search-container">
+                <input class="search-input" class="scroll-serach-input" type="search" value="Search">
                 <div>
                       <a href="#" class="menu-item-text-attrs"><img class="right-menu-image-link" src="img/login.png"></a>
                     <a href="#" class="menu-item-text-attrs"><img class="right-menu-image-link" src="img/cart.png"></a>
 
                 </div>
             </div>
-        </div>
+        </nav>
 
-        <div id="display-content-container">
-            <h1>About Us</h1>
-            <p>Vero eos et accusamus et isusto odio dignissimos ducimus qui blanditis praesentium</p>
-        </div>
-
-        <div class="featured-copy-container"> 
-            <h2>WE WANT TO GIVE YOU THE BEST</h2>
-            <div id="featured-copy-text"> 
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati. At vero eos et accusamus et iusto odio dignxissimos ducimus qui blanditiis praesentium voluptatum.
-
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor- emque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem. Sed ut perspiciatis unde omnis iste natus error sit vo- luptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                </p>
-            </div>
-                
-            <div id="featured-copy-image">
-                <img src="img/featured-copy-image.jpg">
-                <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa ntium dolor- emque lauda ntium.
-                </p>
-            </div>
-        </div>
-
-
-        <div class="members-container">
-            <div id="members-header">
-                <h3>MEET THE FLOCK</h3>
+        <main role="main">
+            <div class="display-content-container">
+                <h1 class="about-us-header">About Us</h1>
+                <p class="about-us-copy">Vero eos et accusamus et isusto odio dignissimos ducimus qui blanditis praesentium</p>
             </div>
 
-            <div class="members-all">
-                <div class="member">
-                    <img class="member-img" src="img/jim-sturgess.png">
-                    <div class="overlay"><img class="image-overlay-icon" src="img/search-overlay.png"></div>
-                    <h4>Jim Sturgess</h4>
-                    <p>Deep Sea Fishing</p>
-                </div>
+            <div class="featured-copy-container"> 
+                <h2 class="featured-copy-header">WE WANT TO GIVE YOU THE BEST</h2>
 
-                <div class="member">
-                    <img src="img/jenny-tiller.png">
-                    <div class="overlay"><img class="image-overlay-icon" src="img/search-overlay.png"></div>
-                    <h4>Jenny Tiller</h4>
-                    <p>Turkey, Whitetail</p>
-                </div>
+                 <figure class="featured-copy-image-figure">
+                    <img src="img/featured-copy-image.jpg" class="featured-copy-image">
+                    <figcaptions class="feature-copy-image-caption">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa ntium dolor- emque lauda ntium.
+                    </figcaption>
+                </figure>
 
-                <div class="member">
-                    <img src="img/mark-howard.png">
-                    <div class="overlay"><img class="image-overlay-icon" src="img/search-overlay.png"></div>
-                    <h4>Mark Howard</h4>
-                    <p>Whitetail, Big Game</p>
-                </div>
-
-                <div class="member">
-                    <img src="img/sara-wenner.png">
-                    <div class="overlay"><img class="image-overlay-icon" src="img/search-overlay.png"></div>
-                    <h4>Sara Wenner</h4>
-                    <p>Predators, Turkey</p>
-                </div>
-
-                <div class="member">
-                    <img src="img/allen-johnson.png">
-                    <div class="overlay"><img class="image-overlay-icon" src="img/search-overlay.png"></div>
-                    <h4>Allen Johnson</h4>
-                    <p>Big Game, Trapping</p>
-                </div>
-
-                <div class="member">
-                    <img src="img/jim-sturgess.png">
-                    <div class="overlay"><img class="image-overlay-icon" src="img/search-overlay.png"></div>
-                    <h4>Jim Sturgess</h4>
-                       <p>Deep Sea Fishing</p>
-                 </div>
-
-                <div class="member">
-                    <img src="img/jenny-tiller.png">
-                    <div class="overlay"><img class="image-overlay-icon" src="img/search-overlay.png"></div>
-                    <h4>Jenny Tiller</h4>
-                    <p>Turkey, Whitetail</p>
-                </div>
-
-                <div class="member">
-                    <img src="img/mark-howard.png">
-                    <div class="overlay"><img class="image-overlay-icon" src="img/search-overlay.png"></div>
-                    <h4>Mark Howard</h4>
-                    <p>Whitetail, Big Game</p>
-                </div>
-
-                <div class="member">
-                    <img src="img/sara-wenner.png">
-                    <div class="overlay"><img class="image-overlay-icon" src="img/search-overlay.png"></div>
-                    <h4>Sara Wenner</h4>
-                    <p>Predators, Turkey</p>
-                </div>
-
-                <div class="member">
-                    <img src="img/allen-johnson.png">
-                    <div class="overlay"><img class="image-overlay-icon" src="img/search-overlay.png"></div>
-                    <h4>Allen Johnson</h4>
-                    <p>Big Game, Trapping</p>
-                </div>
+                   <p class="feature-copy-p">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati. At vero eos et accusamus et iusto odio dignxissimos ducimus qui blanditiis praesentium voluptatum.
+                    </p>
+                    
+                    <p class="feature-copy-p">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor- emque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem. Sed ut perspiciatis unde omnis iste natus error sit vo- luptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                    </p>
+                    
+                    <p class="feature-copy-p">
+                       Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+                    </p>
             </div>
-        </div>
 
-    <div class="footer">
+
+        <div class="meet-the-flock-container">
+            <div class="meet-the-flock-header-container">
+                <h2 class="meet-the-flock-header">Meet the flock</h2>
+            </div>
+
+            <ul class="members-all-ul">
+                <li class="member">
+                    <a href="#"><img class="member-img" src="img/jim-sturgess.jpg"></a>
+                    <a href="#" class="member-url"><h4 class="member-name">Jim Sturgess</h4></a>
+                    <span class="flock-member-skill">Deep Sea Fishing</span> 
+                </li>
+
+                <li class="member">
+                    <a href=""><img class="member-img" src="img/jenny-tiller.jpg"></a>
+                    <a href="" class="member-url"><h4 class="member-name">Jenny Tiller</h4></a>
+                    <span class="flock-member-skill">Turkey, Whitetail</span>
+                </li>
+
+                <li class="member">
+                    <a href="#"><img class="member-img" src="img/mark-howard.jpg"></a>
+                    <a href="#" class="member-url"><h4 class="member-name">Mark Howard</h4></a>
+                    <span class="flock-member-skill">Whitetail, Big Game</span>
+                </li>
+
+                <li class="member">
+                    <a href="#"><img class="member-img" src="img/sara-wenner.jpg"></a>
+                    <a href="#" class="member-url"><h4 class="member-name">Sara Wenner</h4></a>
+                    <span class="flock-member-skill">Predators, Turkey</span>
+                </li>
+
+                <li class="member">
+                    <a href="#"><img class="member-img" src="img/allen-johnson.jpg"></a>
+                    <a href="#" class="member-url"><h4 class="member-name">Allen Johnson</h4></a>
+                    <span class="flock-member-skill">Big Game, Trapping</span>
+                </li>
+
+                <li class="member">
+                    <a href="#"><img class="member-img" src="img/jim-sturgess.jpg"></a>
+                    <a href="#" class="member-url"><h4 class="member-name">Jim Sturgess</h4></a>
+                    <span class="flock-member-skill">Deep Sea Fishing</span>
+                </li>
+
+                <li class="member">
+                    <a href="#"><img class="member-img" src="img/jenny-tiller.jpg"></a>
+                    <a href="#" class="member-url"><h4 class="member-name">Jenny Tiller</h4></a>
+                    <span class="flock-member-skill">Turkey, Whitetail</span>
+                </li>
+
+                 <li class="member">
+                    <a href="#"><img class="member-img" src="img/mark-howard.jpg"></a>
+                    <a href="#" class="member-url"><h4 class="member-name">Mark Howard</h4></a>
+                    <span class="flock-member-skill">Whitetail, Big Game</span>
+                </li>
+                    
+                 <li class="member">
+                    <a href="#"><img class="member-img" src="img/sara-wenner.jpg"></a>
+                    <a href="#" class="member-url"><h4 class="member-name">Sara Wenner</h4></a>
+                    <span class="flock-member-skill">Predators, Turkey</span>
+                </li>
+        
+                 <li class="member">
+                    <a href="#"><img class="member-img" src="img/allen-johnson.jpg"></a>
+                    <a href="#" class="member-url"><h4 class="member-name">Allen Johnson</h4></a>
+                    <span class="flock-member-skill">Big Game, Trapping</span>
+                </li>
+            </ul>
+        </div>        
+    </main>
+
+    <footer class="footer" role="footer">
         <div class="logo-contact-container">
-            <img src="img/logo-footer.png">
-            <ul>
-                <li>
-                    <a href="#">About</a>
+            <a href="#"><img class="footer-logo" src="img/logo-footer.png"></a>
+
+            <ul class="footer-contact-info">
+                <li class="footer-contact-info-li">
+                    <a href="#" class="footer-link">About</a>
                 </li>
-                <li>
-                    <a href="#">Contact Us</a>
+                <li class="footer-contact-info-li">
+                    <a href="#" class="footer-link">Contact Us</a>
                 </li>
-                <li>
-                    <a href="#">Privacy Policy</a>
+                <li class="footer-contact-info-li">
+                    <a href="#" class="footer-link">Privacy Policy</a>
                 </li>
-                <li>
-                    <a href="#">Legal</a>
+                <li class="footer-contact-info-li">
+                    <a href="#" class="footer-link">Legal</a>
                 </li>
             </ul>  
 
-            <img id="footer-social" src="img/footer-social.png">
+            <a href="#"><img class="footer-social" src="img/footer-social.png"></a>
 
-            <div id="copyright-poweredby">
-                <p>©2014 Duckhole Inc. All rights reserved.</p>
-                <img id="caddis-logo" src="img/caddis.png">
+            <div class="copyright-poweredby">
+                <span class="copyright-text">
+                <small>&#0169<small>2014 Duckhole Inc. All rights reserved.
+                </span>
+
+                <span class="powered-by-text">
+                    Powered by  <a href="#">
+                </span>
+
+                <img class="caddis-logo" src="img/caddis.png"></a>
             </div>
-
         </div>
-    </div>
+    </footer>
 
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
     <script src="js/main.js"></script>
     </body>
 </html>
