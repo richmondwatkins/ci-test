@@ -1,22 +1,32 @@
 (function(){
 
+  var $login;
+  var $cart;
+  var $search;
+  var $sub;
+  var $sideMenuNav;
+  var $originalPosition;
+  var $container;
+  var $viewWindow;
+
 	$(document).ready(function(){
+    $login = $('.login');
+    $cart = $('.cart');
+    $search = $('.search');
+    $sub = $('.side-menu__subscribe');
+    $sideMenuNav = $('.side-menu');
+    $originalPosition = $('.header-menu__right-menu-items');
+    $container = $('<div>');
+    $viewWindow = $(window);
 
     checkScrollPosition();
-		$(window).scroll(checkScrollPosition); 
-	});
 
-  var $login = $('.login');
-  var $cart = $('.cart');
-  var $search = $('.search');
-  var $sub = $('.side-menu__subscribe');
-  var $sideMenuNav = $('.side-menu');
-  var $originalPosition = $('.header-menu__right-menu-items');
-  var $container = $('<div>');
+    window.onscroll = checkScrollPosition;
+	});
 
   function checkScrollPosition(){
 
-      if($(window).scrollTop() >= 418){
+      if($viewWindow.scrollTop() >= 480){
       
         $login.addClass('movable-center');
         $search.addClass('movable-search'); 
@@ -25,14 +35,14 @@
         $container.append($login);
         $container.append($cart);
 
-        $sub.addClass('hide-subscribe');
+        $sub.addClass('movable-hide-subscribe');
         $sideMenuNav.append($container);
 
       }else {
 
         $login.removeClass('movable-center');
         $search.removeClass('movable-search');
-        $sub.removeClass('hide-subscribe');
+        $sub.removeClass('movable-hide-subscribe');
 
         $originalPosition.append($login);
         $originalPosition.append($cart);
