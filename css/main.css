@@ -92,6 +92,7 @@ body {
 }
 
 .footer__contact-container {
+    padding-top: 30px;
     width: 600px;
     margin: 0 auto;
 }
